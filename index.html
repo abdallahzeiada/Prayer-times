@@ -3,15 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prayer Times in Mansoura</title>
+  <title>Prayer Times in Egypt</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
+    <h1>Prayer Times in Egypt</h1>
+    <form id="cityForm">
+      <label for="city">Select City:</label>
+      <select id="city" name="city">
+        <option value="Cairo">Cairo</option>
+        <option value="Alexandria">Alexandria</option>
+        <option value="Giza">Giza</option>
+        <option value="Luxor">Luxor</option>
+        <option value="Aswan">Aswan</option>
+        <option value="Mansoura">Mansoura</option>
+      </select>
+    </form>
     <div id="prayerTimes">
       <!-- Prayer times will be displayed here -->
-      <strong>Loading prayer times...</strong>
+      <p>Select a city to view prayer times.</p>
     </div>
   </div>
   <script src="main.js"></script>

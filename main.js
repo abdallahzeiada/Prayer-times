@@ -1,5 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
-    fetchPrayerTimes('Mansoura');
+    const citySelect = document.getElementById('city');
+    citySelect.addEventListener('change', function () {
+      const selectedCity = citySelect.value;
+      fetchPrayerTimes(selectedCity);
+    });
+  
+    // Load prayer times for the default city (Cairo) on page load
+    fetchPrayerTimes(citySelect.value);
   });
   
   function fetchPrayerTimes(city) {
