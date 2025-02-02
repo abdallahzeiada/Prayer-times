@@ -8,7 +8,7 @@
   /* Body Styling */
   body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: url('mosque-6153752.jpg');
+    background-image: url('./mosque-6153752.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
